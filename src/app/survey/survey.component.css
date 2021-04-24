@@ -1,0 +1,22 @@
+button{
+  background-color: blue;
+  border:none;
+  padding:10px;
+  color:white;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container {
+  height: 300px;
+  margin-left: 30%;
+  margin-top: 15px;
+  background-color: white;
+}
+input{
+  width: 60%;
+  padding:10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 15px ;
+}

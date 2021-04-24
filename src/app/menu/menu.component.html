@@ -1,0 +1,14 @@
+<div class="container">
+  <div *ngFor="let product of product" class="menu-item">
+    <img class="img" *ngIf="product.image" [src]="product.image" />
+    <div>
+      <p>
+        {{product.describtion}}
+      </p>
+      <p>
+        {{product.cost}}
+      </p>
+      <button class="like" (click)="addToShop(product)">Add to shop</button>
+    </div>
+  </div>
+</div>
