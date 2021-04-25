@@ -1,0 +1,20 @@
+<div class="container" *ngIf="!rgtr">
+  <button (click)="goBack()">Back</button><br />
+  <p>Please write your name:</p>
+  <input type="text" [(ngModel)]="name" />
+  <p>Please write password:</p>
+  <input type="text" [(ngModel)]="psw" />
+  <br />
+  <button (click)="register()">Create account</button>
+  <button (click)="submit()">submit</button>
+</div>
+<div class="container" *ngIf="rgtr">
+  <button (click)="goBack()">Back</button><br />
+  <p>Please fill the fields below and <b>remember your password!</b></p>
+  <p>Please write your name:</p>
+  <input type="text" [(ngModel)]="name" />
+  <p>Please write password:</p>
+  <input type="text" [(ngModel)]="psw" />
+  <br />
+  <button (click)="addUser()">submit</button>
+</div>

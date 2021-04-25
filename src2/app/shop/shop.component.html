@@ -1,0 +1,22 @@
+<div *ngIf="!empty">
+  <h1>Here will be saved chosen products</h1>
+  <div *ngIf="items">
+    <div *ngFor="let item of items" class="menu-item">
+      <img class="img" *ngIf="item.image" [src]="item.image" />
+      <div class="text" style="margin-top:20px;">
+        <p style="margin-top:20px;">
+          {{item.describtion}}
+        </p>
+        <p>
+          {{item.cost}}
+        </p>
+        <button (click)="buy(item.image, item.name)">Buy</button>
+        <button (click)="delete(item.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="empty">
+  <h1>Here will be saved chosen products</h1>
+  <h2>The shop is empty</h2>
+</div>
