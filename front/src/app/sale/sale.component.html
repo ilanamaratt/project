@@ -1,0 +1,12 @@
+<h1 style="text-align:center;">Here you can see the possible and active special offers!</h1>
+
+<div *ngFor="let sale of sales">
+  <img
+    class="kupon"
+    [src]="sale.image"/>
+  <div class="text-block">
+    <h1>{{sale.sale}}%</h1>
+    <h3>{{sale.describtion}}</h3>
+    <button (click)="getSale()"> Get offer </button> 
+  </div>
+</div>
